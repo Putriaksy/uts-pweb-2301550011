@@ -5,7 +5,7 @@
 - **NIM**: 2301550011
 
 ### URL Website
-- **GitHub Repository**: [https://github.com/Putriaksy/uts-pweb-2301550011]([https://github.com/Putriaksy/uts-pweb-2301550011](http://localhost/kantor_supplier/))
+- **GitHub Repository**: [https://github.com/Putriaksy/uts-pweb-2301550011](http://localhost/kantor_supplier/))
 
 ### Penjelasan Fitur
 Website "Toko Alat Tulis Papira" adalah toko online untuk alat tulis yang menyediakan berbagai produk seperti buku, pena, pensil, penghapus, dan lainnya. Berikut adalah fitur-fitur utama yang tersedia di website ini:
@@ -29,3 +29,18 @@ Sumber Gambar/Aset yang Digunakan
 Ikon dan Ilustrasi: Menggunakan ikon dari FontAwesome dan ilustrasi dari Freepik.
 Foto Produk: Gambar produk diambil dari gogle dengan lisensi gratis.
 Font: Menggunakan font dari Google Fonts, seperti "poppins" dan "san serif".
+
+### Cara Menjalankan Website
+Untuk menjalankan website "Toko Alat Tulis Papira" di lingkungan lokal, ikuti langkah-langkah berikut:
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/Putriaksy/uts-pweb-2301550011.git
+   cd uts-pweb-2301550011
+2. Instalasi Dependensi Pastikan Anda memiliki Node.js dan npm terinstal. Kemudian jalankan perintah:
+   npm install
+3. Jalankan Server Jalankan perintah berikut untuk menjalankan website di server lokal:
+   npm start
+4. Build untuk Produksi Untuk melakukan build aplikasi untuk produksi, jalankan perintah berikut:
+   npm run build
+
