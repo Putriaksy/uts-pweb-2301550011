@@ -29,10 +29,3 @@ Sumber Gambar/Aset yang Digunakan
 Ikon dan Ilustrasi: Menggunakan ikon dari FontAwesome dan ilustrasi dari Freepik.
 Foto Produk: Gambar produk diambil dari gogle dengan lisensi gratis.
 Font: Menggunakan font dari Google Fonts, seperti "poppins" dan "san serif".
-### Cara Menjalankan Website
-Untuk menjalankan website "Toko Alat Tulis Papira" di lingkungan lokal, ikuti langkah-langkah berikut:
-
-1. **Clone Repository**
-   ```bash
-   git clone https://github.com/Putriaksy/uts-pweb-2301550011.git
-   cd uts-pweb-2301550011
