@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo"><i class="fas fa-pencil-alt"></i> Toko Alat Tulis kantor</h1>
+        </div>
+    </header>
+
+    <!-- Form Pemesanan -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Pemesanan</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="telepon" class="form-label">Nomor Telepon</label>
+                <input type="text" class="form-control" id="telepon" required>
+            </div>
+            <div class="mb-3">
+                <label for="alamat" class="form-label">Alamat Lengkap</label>
+                <textarea class="form-control" id="alamat" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="pembayaran" class="form-label">Metode Pembayaran</label>
+                <select class="form-select" id="pembayaran">
+                    <option>Transfer Bank</option>
+                    <option>e-Wallet</option>
+                    <option>COD</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Proses Pesanan</button>
+        </form>
+    </section>
+</body>
+</html>
+<script src="script.js"></script>
+

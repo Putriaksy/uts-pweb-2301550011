@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="container d-flex justify-content-between align-items-center py-3">
+    <div class="logo">Toko Alat Tulis</div>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="cart.html">Keranjang <span id="cart-count">0</span></a>
+    </nav>
+</header>
+
+<!-- Keranjang Belanja -->
+<section class="container py-5">
+    <h2>Keranjang Belanja</h2>
+    <div id="cart-items"></div>
+    <button id="checkout-btn" class="btn btn-primary mt-3">Lanjutkan ke Pemesanan</button>
+</section>
+
+<script src="script.js"></script>
+<script>
+    // Menampilkan isi keranjang
+    function renderCart() {
+        const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        const cartContainer = document.getElementById("cart-items");
+        cartContainer.innerHTML = '';
+
+        if (cartItems.length === 0) {
+            cartContainer.innerHTML = "<p>Keranjang Anda kosong.</p>";
+        } else {
+            cartItems.forEach((item, index) => {
+                const itemDiv = document.createElement("div");
+                itemDiv.classList.add("cart-item");
+                itemDiv.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" width="100">
+                    <div>
+                        <h5>${item.name}</h5>
+                        <p>Harga: ${item.price}</p>
+                    </div>
+                    <button class="btn btn-danger btn-remove" data-index="${index}">Hapus</button>
+                `;
+                cartContainer.appendChild(itemDiv);
+            });
+        }
+    }
+
+    // Menghapus item dari keranjang
+    document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("btn-remove")) {
+            const index = e.target.getAttribute("data-index");
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            renderCart();
+            updateCartCount();
+        }
+    });
+
+    // Tombol Lanjutkan ke Pemesanan
+    document.getElementById("checkout-btn").addEventListener("click", () => {
+        if (JSON.parse(localStorage.getItem("cart")).length > 0) {
+            window.location.href = "order.html"; // Arahkan ke halaman pemesanan
+        } else {
+            alert("Keranjang Anda kosong!");
+        }
+    });
+
+    renderCart(); // Render isi keranjang saat halaman dimuat
+    updateCartCount();
+</script>
+
+</body>
+</html>
