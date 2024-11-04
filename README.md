@@ -5,7 +5,7 @@
 - **NIM**: 2301550011
 
 ### URL Website
-- **GitHub Repository**: [https://github.com/Putriaksy/uts-pweb-2301550011](https://github.com/Putriaksy/uts-pweb-2301550011)
+- **GitHub Repository**: [https://github.com/Putriaksy/uts-pweb-2301550011]([https://github.com/Putriaksy/uts-pweb-2301550011](http://localhost/kantor_supplier/))
 
 ### Penjelasan Fitur
 Website "Toko Alat Tulis Papira" adalah toko online untuk alat tulis yang menyediakan berbagai produk seperti buku, pena, pensil, penghapus, dan lainnya. Berikut adalah fitur-fitur utama yang tersedia di website ini:
